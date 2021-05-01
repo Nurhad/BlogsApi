@@ -10,8 +10,7 @@ namespace BlogsApi.Services
 {
     public class CategoryService : ICategoryService
     {
-        private BlogsDbContext blogsDbContext;
-
+        private readonly BlogsDbContext blogsDbContext;
         public CategoryService(BlogsDbContext blogsDbContext)
         {
             this.blogsDbContext = blogsDbContext;
